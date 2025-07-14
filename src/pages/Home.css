@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Gloria+Hallelujah&display=swap');
+
+body {
+  background: #232323;
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  background: #181818;
+  border: 4px solid #ffe066;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(255,224,102,0.10);
+  padding: 40px 24px 32px 24px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffe066;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fff3cd;
+  margin-bottom: 1.5rem;
+}
+
+.integrantes {
+  color: #51cf66;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.integrantes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.integrantes li {
+  font-size: 1.2rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.category-section {
+  background: #181818;
+  border: 3px dashed #ffe066;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  padding: 32px 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.category-section h2 {
+  color: #ffe066;
+  font-family: 'Permanent Marker', cursive;
+  border-bottom: 2px solid #ff6f61;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.category-description {
+  color: #fff3cd;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 3rem;
+}
+
+.error {
+  color: #ff6f61;
+}
+
+.btn {
+  background: #ffe066;
+  color: #232323;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: #ffb300;
+  color: #fff;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(255,224,102,0.10);
+  background: #181818;
+  border: 3px solid #ffe066;
+}
+
+.products-grid-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.products-grid-horizontal .product-card {
+  width: 220px;
+  height: 220px;
+  background: #181818;
+  border: 3px solid #ffe066;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px 4px;
+  }
+  .hero {
+    padding: 24px 8px 20px 8px;
+  }
+  .category-section {
+    padding: 16px 6px;
+  }
+  .products-grid {
+    gap: 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+  .products-grid-horizontal {
+    gap: 1rem;
+  }
+  .products-grid-horizontal .product-card {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Estilos para las secciones de categorías con productos */
+.category-section-list {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category-section {
+  background: #181818;
+  border: 3px solid #ffe066;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ffe066;
+}
+
+.category-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #ffe066;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.8rem;
+}
+
+.category-products {
+  margin-top: 1rem;
+}
+
+.category-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-style: italic;
+}
+
+.products-section {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.products-section h2 {
+  color: #ffe066;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+} 

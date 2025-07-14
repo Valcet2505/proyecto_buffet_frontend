@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Gloria+Hallelujah&display=swap');
+
+body, html, * {
+  font-family: 'Gloria Hallelujah', cursive, Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', cursive !important;
+}
+
+a {
+  color: #ffe066;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffb300;
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #181818;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffe066;
+  border-radius: 4px;
+} 

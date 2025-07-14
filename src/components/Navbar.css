@@ -1,0 +1,117 @@
+.navbar {
+  background: rgba(30,30,30,0.98);
+  color: #ffe066;
+  padding: 1.2rem 0 1.2rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  border-bottom: 4px double #ffe066;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #ffe066;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 0 #232323, 0 0 8px #ffe06644;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffe066;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #ffe066;
+  color: #232323;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff6f61;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid #ffe066;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-name {
+  color: #ffe066;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background: #ffe066;
+  color: #232323;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: #ffb300;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .navbar-menu {
+    gap: 1rem;
+  }
+  .user-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+} 
